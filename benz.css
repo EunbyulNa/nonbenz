@@ -1,0 +1,395 @@
+@charset "utf-8";
+
+/*전체바디*/
+* {
+  margin: 0;
+  padding: 0;
+ background-color: black;
+font-family: 'Changa', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration:none;
+}
+
+/*main header*/
+.main_header {
+  background-color: black;
+  overflow: hidden;
+
+}
+
+.title {
+
+  float: left;
+  margin-left: 300px;
+  margin-right: 550px;
+
+}
+
+
+.title > h1 {
+  margin-top: 20px;
+  color: white;
+  display: block;
+
+  font-family: 'Source Serif Pro', serif;
+}
+
+.small_menu {
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.small_menu a {
+  float: left;
+  color: white;
+  padding: 10px;
+  transition: transform .2s;
+
+}
+
+.small_menu a:hover {
+  transform: scale(1.2);
+
+}
+
+/*sub header*/
+
+.sub_header {
+  background-color: black;
+  border-top: 1px solid gray;
+}
+.main_menu {
+  clear:both;
+  overflow: hidden;
+  display: block;
+  width: 700px;
+  margin-left: 300px;
+}
+
+.main_menu a {
+  float: left;
+padding: 20px;
+text-align: center;
+color: white;
+transition: transform .2s;
+}
+
+.main_menu a:hover {
+  transform: scale(1.2);
+}
+
+/*content*/
+
+.content {
+  background-color: black;
+}
+.content img {
+  display: block;
+  margin: 0 auto;
+
+}
+
+/*madlepara*/
+.modelpara {
+  margin-left: 90px;
+  margin-top: 30px;
+  padding:10px;
+
+}
+.modelpara h1 {
+  font-size: 50px;
+  color: white;
+  font-family: 'Source Serif Pro', serif;
+}
+
+/*aside*/
+.main_section {
+  overflow: hidden;
+
+
+}
+
+#main_aside {
+  margin-top: 50px;
+  margin-left: 100px;
+  float: left;
+  border-right: 1px solid gray;
+  width: 20.9%;
+  height: 1525px;
+
+}
+
+
+input:nth-of-type(1) {
+  display:none;
+}
+input:nth-of-type(1) ~ div:nth-of-type(1) {
+  display:none;
+}
+/*첫번째 input의 같은 레벨(같은형제)인 div(그 중에서 첫번째로 나오는)*/
+input:nth-of-type(1):checked ~ div:nth-of-type(1) {
+  display:block;
+}
+/*첫번째 input이 체크가 되었을 때는 같은 레벨9같은형제)인 div(그 중에서 첫번째로 나오는)가 보인다*/
+
+input:nth-of-type(2) {
+  display:none;
+ }
+input:nth-of-type(2) ~ div:nth-of-type(2)  {
+  display:none;
+}
+input:nth-of-type(2):checked ~ div:nth-of-type(2)  {
+  display:block;
+}
+
+input:nth-of-type(3) {
+  display:none;
+ }
+input:nth-of-type(3) ~ div:nth-of-type(3)  {
+  display:none;
+}
+input:nth-of-type(3):checked ~ div:nth-of-type(3)  {
+  display:block;
+}
+
+section.button {
+  overflow:hidden;
+}
+section.button > label {
+  display:block;
+  float:left;
+  width:33.3%;
+  height:50px;
+  border:1px solid gray;
+  box-sizing:border-box;
+  text-align:center;
+  line-height:45px;
+  background:white;
+  color:black;
+  cursor:pointer;
+  transition: transform .2s;
+}
+
+section.button > label:hover {
+transform: scale(1.2);
+}
+
+input:nth-of-type(1):checked ~ section > label:nth-of-type(1) {
+   background:black;
+   color:white }
+input:nth-of-type(2):checked ~ section > label:nth-of-type(2) {
+  background:black;
+   color:white;
+
+}
+input:nth-of-type(3):checked ~ section > label:nth-of-type(3) {
+  background:black;
+   color:white;
+ }
+/*두번째 input이 체크가 되어 있으면 같은 형제레벨인 section 안에 있는 2번째 label의 배경과 글씨 색이 바뀐다*/
+
+.tab_item > ul > li {
+  padding:5px;
+  overflow:hidden;
+
+}
+
+.thumbnail {
+  float:left;
+}
+.text {
+  float:left;
+  margin-left:10px;
+  margin-top: 15px;
+  color: white;
+ }
+
+.text:hover {
+  color: #4da6ff;
+}
+
+/*메인섹션*/
+
+.main_section {
+  margin: auto;
+
+}
+
+.main_right {
+  overflow: hidden;
+  float: left;
+  width:900px;
+  margin-top: 80px;
+  margin-left: 50px;
+ border-bottom: 1px solid gray;
+  text-align: center;
+ color: white;
+
+
+}
+
+.main_right img {
+  transition: transform .2s
+}
+
+.main_right img:hover {
+transform: scale(0.8);
+
+}
+.main_right h1 {
+  font-family: 'Source Serif Pro', serif;
+}
+
+.main_right h2 {
+  font-size: 15px;
+}
+.main_right_more {
+  float: left;
+  padding: 20px;
+}
+
+.main_right_more img {
+  width: 250px;
+
+}
+
+.main_right_more img:hover {
+  width: 60%;
+
+}
+
+.last {
+  border: none;
+}
+
+/*refer*/
+.refer {
+
+  width:1250px;
+  margin: 100px auto;
+  color: white;
+}
+
+#hbox {
+  padding: 10px;
+  border-bottom: solid 1px white
+
+}
+
+.refer p {
+  margin-top: 10px;
+}
+
+
+/*newsboxes*/
+
+.newsboxes {
+
+  color: white;
+  overflow: hidden;
+  margin-top: 100px;
+  height: 300px;
+  background-color: white;
+}
+
+.newsbox {
+  margin-top: 100px;
+ margin-left: 15px;
+}
+.news {
+
+  border: 1px solid white;
+  border-radius: 10px;
+  float: left;
+  padding: 30px;
+  width: 200px;
+  height: 25px;
+  text-align: center;
+  margin: 10px;
+
+
+}
+
+.news:hover {
+  color: #4da6ff;
+}
+
+
+/*footer*/
+
+footer {
+  height: 500px;
+  color: white;
+}
+
+.totop {
+  box-sizing: border-box;
+  border-bottom: 1px solid white;
+  width: 1250px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.totop a {
+  color: #4da6ff;
+}
+
+.social_box {
+  box-sizing: border-box;
+  border-bottom: 1px solid white;
+  width: 1250px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.icons {
+  box-sizing: border-box;
+  margin: 20px 0 10px 0;
+  overflow: hidden;
+}
+
+.icon {
+  float: left;
+  margin-right: 1%;
+}
+
+.icon img:hover {
+  background-color: white;
+}
+.icon img {
+  width: 50%;
+}
+
+.footer_menus {
+
+  overflow: hidden;
+  margin-left: 10%;
+}
+
+.footermenu {
+
+  float: left;
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+
+}
+
+.footermenu li {
+  padding: 3px;
+}
+
+.footermenu li a {
+color: #4da6ff;
+}
+
+.footermenu li a:hover{
+color: white;
+}
